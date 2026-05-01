@@ -1,5 +1,7 @@
 # Agentic AI for Blackjack Decision Support
 
+---
+
 ## Team Members
 - Mohamed Alhajji
 
@@ -25,3 +27,61 @@ This project addresses the problem of making optimal decisions in a changing env
 
 ## Note
 This repository will be updated throughout the project with further details, implementation, and results.
+
+---
+
+## Upload #2 – Technical Plan
+
+## System Overview
+The system will be developed as an agentic AI that recommends optimal blackjack decisions based on the current game state and remaining deck composition.
+
+The agent will:
+- Observe the player’s hand and dealer’s visible card
+- Track remaining cards in the deck
+- Evaluate possible actions
+- Recommend the best move
+
+---
+
+## Technical Approach
+
+### 1. Core Logic
+The system will be implemented in Python. It will include:
+- Game logic for blackjack rules
+- A deck tracking system that updates as cards are used
+- A decision engine that evaluates possible actions
+
+### 2. Simulation Engine
+A Monte Carlo simulation approach will be used:
+- The system will simulate many possible outcomes for each action (hit, stand, double)
+- Each action will be evaluated based on expected value
+- The best action will be selected based on simulation results
+
+### 3. Strategy Baseline
+A basic blackjack strategy will be used as a reference point to:
+- Guide decision-making
+- Compare against simulation results
+
+---
+
+## Tools and Frameworks
+- Python
+- Streamlit
+- NumPy
+
+---
+
+## Dataset
+No external dataset is required.
+
+The system will generate its own data through:
+- Simulations of blackjack games
+- Dynamic deck tracking during gameplay
+
+---
+
+## Evaluation Plan
+The system will be evaluated by:
+- Comparing decisions with standard blackjack strategy
+- Measuring expected value (EV) of actions
+- Running multiple simulated games to test performance
